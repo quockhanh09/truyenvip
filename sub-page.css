@@ -1,0 +1,115 @@
+
+:root{
+    --sp-tit-color-- :#3F2280;
+    --ft-title-- :'Open Sans', sans-serif;
+
+}
+
+.sub-page-main{
+    background:#F4F4F4;
+    padding: 16px;
+    width: 90%;
+    margin: auto;
+    font-family: var(--ft-title--);
+}
+.book-info{
+    min-width: 250px;
+    margin-right: 16px;
+}
+.title{
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    margin: 0 0 16px 16px;
+}
+.main-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.book-image{
+    width: 200px;
+    height: 300px;
+    box-shadow: 3pt 4pt rgb(127, 127, 197);
+}
+.details{
+    margin: 24px 0;
+    line-height: 1.5;
+    min-width: 300px;
+}
+.detail{
+    display: flex;
+}
+.type{
+    width: 80px;
+    color: rgb(11, 11, 218);
+}
+.book-review{
+    /* border: 1px solid black; */
+    width: 85%;
+    align-items: center;
+    font-size: 16px;
+    text-align: justify;
+    margin-right: 32px;
+}
+.book-name{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.ads{
+    width: 20%;
+}
+.chapters{
+    width: 90%;
+}
+.chap-list{
+    padding: 24px;
+}
+.chap-list a:hover{
+    text-decoration:underline
+}
+@media (max-width:768px){
+    .review{
+        font-size: 12px;
+    }
+    .book-image{
+        width: 150px;
+        height: 200px;
+    }
+    .detail{
+        font-size: 14px;
+    }
+    .type{
+        width: 70px;
+    }
+}
+@media (max-width:576px){
+    .review{
+        font-size: 8px;
+    }
+    .book-name{
+        font-size: 14px;
+    }
+    .book-info{
+        min-width: 150px;
+    }
+    .book-image{
+        width: 100px;
+        height: 150px;
+    }
+    .detail, .chap-list{
+        font-size: 10px;
+    }
+    .type{
+        width: 50px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .chap-list{
+        padding: 6px 24px;
+    }
+}

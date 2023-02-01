@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --icon-col--:#efa53a;
+    --icon-col-hover--:#e2b980;
+}
+
+.container{
+    width: 99%;
+    height: 100%;
+    padding-top: 32px;
+    overflow-y: auto;
+    background-color: black;
+}
+
+.header__category, .footer__category{
+    background-color: #3f2280;
+    padding: 16px 28px;
+    display: flex;
+    justify-content: center;
+    margin: 8px auto;
+    text-decoration: none;
+    width: 25%;
+    min-width: 450px;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+}
+
+.home{
+    color: var(--icon-col--);
+    font-size: 30px;
+    height: 100%;
+    margin-right: 8px;
+}
+
+.select__chap{
+    margin: 0 -9px;
+    width: 25%;
+}
+
+.prev__chap , .next__chap{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background: var(--icon-col--);
+}
+
+.select__chap:focus{
+    outline-style: none;
+}
+.select__chap{
+    height: 34px;
+    width: 40%;
+    margin: 0 8px;
+    background-color: rgb(241, 239, 239);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.like__chapter{
+    min-width: 85px;
+    height: 30px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    background-color: #5cb85c;
+    color: #fff;
+    font-weight: 600;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+.reading{
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 500px;
+    image-rendering: pixelated;
+    
+}
+
+/* Footer */
+
+.footer__category{
+    justify-content: space-evenly;
+}
+
+.ft-next__chap, .ft-prev__chap{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background: var(--icon-col--);
+    box-shadow: 2pt 2pt #aa8857;
+}
+.hover:hover{
+    background: var(--icon-col-hover--)
+}
+
+/* Responsive */
+@media (max-width:768px){
+    img{
+        width: 300px;
+    }
+    .header__category, .footer__category{
+        min-width: 350px;
+
+    }
+}
+
+@media (max-width:576px){
+    img{
+        width: 320px;
+    }
+    .header__category, .footer__category{
+        min-width: 300px;
+        height: 20px;
+    }
+    .home{
+        font-size: 16px;
+    }
+    .prev__chap , .next__chap, .select__chap, .ft-next__chap, .ft-prev__chap{
+        font-size:14px ;
+    }
+    .like__chapter{
+        min-width: 50px;
+        font-size: 10px;
+    }
+}
